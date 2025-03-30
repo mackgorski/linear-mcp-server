@@ -283,7 +283,9 @@ class LinearMCPClient {
       teamId: args.teamId,
       description: args.description,
       priority: args.priority,
-      stateId: args.status
+      stateId: args.status,
+      projectId: args.projectId,
+      projectMilestoneId: args.projectMilestoneId
     });
 
     const issue = await issuePayload.issue;
@@ -299,7 +301,9 @@ class LinearMCPClient {
       title: args.title,
       description: args.description,
       priority: args.priority,
-      stateId: args.status
+      stateId: args.status,
+      projectId: args.projectId,
+      projectMilestoneId: args.projectMilestoneId
     });
 
     const updatedIssue = await updatePayload.issue;
